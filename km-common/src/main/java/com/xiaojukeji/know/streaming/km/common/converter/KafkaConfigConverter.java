@@ -108,7 +108,6 @@ public class KafkaConfigConverter {
             config.setDocumentation(configKey.documentation);
             config.setDefaultValue(configKey.defaultValue == null? "": configKey.defaultValue.toString());
         } else {
-            config.setDocumentation(configEntry.documentation());
             config.setDocumentation("");
         }
 
